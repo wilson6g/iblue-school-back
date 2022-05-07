@@ -6,15 +6,25 @@ const User = sequelize.define('user', {
     type: Sequelize.STRING,
     autoIncrement: false,
     allowNull: false,
-    primaryKey: true
+    primaryKey: true,
+    unique: true,
   },
   username: {
     type: Sequelize.STRING,
     allowNull: false,
+    unique: true,
   },
   password: {
     type: Sequelize.STRING,
     allowNull: false,
+  },
+  schooling: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
+  is_fundamental_two: {
+    type: Sequelize.BOOLEAN,
+    allowNull: true,
   }
 });
 

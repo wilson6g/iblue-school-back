@@ -1,6 +1,6 @@
 const express = require('express');
 const basicOperationsRouter = express.Router();
-const {sum, subtract, multiply, division} = require('../infrastructure/repositories/math/basic/basic-operations-repository');
+const {sum, subtract, multiply, division} = require('../domains/math/basic/basic-operations');
 
 basicOperationsRouter.post('/sum', (request, response) => {
   const { numbers } = request.body;

@@ -1,16 +1,13 @@
-const percent = (numbers) => {
-  const percentResult = numbers.reduce(function (percentTotal, number) {
-    return percentTotal + number;
-  });
-
-  return percentResult;
+const percent = (totalValue, percentValue) => {
+  return totalValue * (percentValue / 100);
 }
 
-const square = (numbers) => {
-
+const square = (number) => {
+  return Math.sqrt(number);
 }
 
-//TODO add more calcs, convert to binary?
+const convertToBinary = (number) => {
+  return parseInt(number.toString(2));
+}
 
-
-module.exports = { };
+module.exports = { percent, square, convertToBinary };

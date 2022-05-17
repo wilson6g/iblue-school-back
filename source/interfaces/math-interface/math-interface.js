@@ -6,9 +6,11 @@ const validateFieldNumberForBasicOperations = require('../../controllers/math-co
 basicOperationsInterface.post('/api/operation', (request, response) => {
   const fieldsIsValid = validateFieldNumberForBasicOperations(request, response);
 
-  if (fieldsIsValid != true) return response.status(400).json(fieldsIsValid).send();
+  if (fieldsIsValid != true) return fieldsIsValid;
 
   const sumResult = operation(request, response);
+
+  if (sumResult.statusCode == 400) return sumResult;
 
   return response.status(201).json(sumResult).send();
 })

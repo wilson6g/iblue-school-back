@@ -71,17 +71,15 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 ```bash
 # Clone este repositório
-$ git clone git@github.com:tgmarinho/README-ecoleta.git
+$ git clone git@github.com:wilson6g/iblue-school-back.git
 # Acesse a pasta do projeto no terminal/cmd
 $ cd iblue-school-back
 # Instale as dependências
 $ npm install ou yarn install
 # Crie um arquivo .env na raiz do projeto
 $ touch .env ou crie um arquivo pela IDE
-# Vá para o arquivo .env.example
-$ copie os dados do .env.example e cole no .env
-# Altere os dados do .env 
-$ Mude para os dados do seu ambiente
+# Vá para o arquivo .env.example e copie os dados do .env.example e cole no .env
+# Altere os dados do .env e mude para os dados do seu ambiente
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev ou yarn dev
 # O servidor iniciará na porta:3333 por padrão - acesse http://localhost:3333
@@ -154,8 +152,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 [![Linkedin Badge](https://img.shields.io/twitter/url?label=LINKEDIN&logo=linkedin&style=social&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fwilsonpinh%2F)](https://www.linkedin.com/in/wilsonpinh/) 
 
-<<<<<<< HEAD
 Feito por Wilson Pinheiro, com o objetivo de realizar o desafio final para vaga de estágio. 😀 [Entre em contato!](https://www.linkedin.com/in/wilsonpinh/)
-=======
-Feito por Wilson Pinheiro, com o objetivo de realizar o desafio final para vaga de estágio. 😀 [Entre em contato!](https://www.linkedin.com/in/wilsonpinh/)
->>>>>>> 0b59c61b8e4cf2ece1f4882907caaea218058544

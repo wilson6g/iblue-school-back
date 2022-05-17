@@ -154,8 +154,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 [![Linkedin Badge](https://img.shields.io/twitter/url?label=LINKEDIN&logo=linkedin&style=social&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fwilsonpinh%2F)](https://www.linkedin.com/in/wilsonpinh/) 
 
-<<<<<<< HEAD
 Feito por Wilson Pinheiro, com o objetivo de realizar o desafio final para vaga de estágio. 😀 [Entre em contato!](https://www.linkedin.com/in/wilsonpinh/)
-=======
-Feito por Wilson Pinheiro, com o objetivo de realizar o desafio final para vaga de estágio. 😀 [Entre em contato!](https://www.linkedin.com/in/wilsonpinh/)
->>>>>>> 0b59c61b8e4cf2ece1f4882907caaea218058544

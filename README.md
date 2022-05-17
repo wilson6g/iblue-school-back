@@ -6,12 +6,6 @@
     🖩 Uma calculadora perfeita para ensinar alunos do fundamental I e II.
 </h3>
 
-<p align="center">
- 
-
- 
-</p>
-
 <h4 align="center">
 	🚧   Concluído ✔️ 🚧
 </h4>
@@ -26,10 +20,8 @@ Tabela de conteúdos
      * [Rodando o Backend (servidor)](#user-content--rodando-o-backend-servidor)
      * [Rodando a aplicação web (Frontend)](#user-content--rodando-a-aplicação-web-frontend)
    * [Tecnologias](#-tecnologias)
-     * [WebSite](#user-content-website--react----typescript)
+     * [Website](#user-content-website--react----typescript)
      * [Server](#user-content-server--nodejs----typescript)
-   * [Autor](#-autor)
-   * [Licença](#user-content--licença)
 <!--te-->
 
 
@@ -37,42 +29,43 @@ Tabela de conteúdos
 
 🏫 Desafio calculadora - é uma calculadora pensada para escolas que desejam ensinar seus alunos do Ensino Fundamental I e II a manusear uma calculadora.
 
-Projeto desenvolvido durante o **Programa de Estágio da IBlue Consulting** oferecida pela [IBlueConsulting](https://www.iblueconsulting.com.br/).
+Projeto desenvolvido durante o **Programa de Estágio da IBlue Consulting** oferecido pela [IBlueConsulting](https://www.iblueconsulting.com.br/).
 
 ---
 
 ## ⚙️ Funcionalidades
 
-- [x] Empresas ou entidades podem se cadastrar na plataforma web enviando:
-  - [x] uma imagem do ponto de coleta
-  - [x] nome da entidade, email e whatsapp
-  - [x] e o endereço para que ele possa aparecer no mapa
-  - [x] além de selecionar um ou mais ítens de coleta: 
-    - lâmpadas
-    - pilhas e baterias
-    - papéis e papelão
-    - resíduos eletrônicos
-    - resíduos orgânicos
-    - óleo de cozinha
+- [x] Os estudantes podem se cadastrar na plataforma web enviando:
+  - [x] um e-mail válido
+  - [x] uma senha válida
+  - [x] e escolhendo a sua escolaridade
 
-- [x] Os usuários tem acesso ao aplicativo móvel, onde podem:
-  - [x] navegar pelo mapa para ver as instituições cadastradas
-  - [x] entrar em contato com a entidade através do E-mail ou do WhatsApp
+- [x] Os usuários tem acesso a uma calculadora dependendo da sua escolaridade, onde podem realizar as seguintes operações:
+  - Fundamental I:
+    - [x] Somar
+    - [x] Subtrair
+    - [x] Multiplicar
+    - [x] Dividir
+  - Fundamental II:
+    - [x] Somar
+    - [x] Subtrair
+    - [x] Multiplicar
+    - [x] Dividir
+    - [x] Porcentagem
+    - [x] Raiz quadrada
 
 ## 🚀 Como executar o projeto
 
-Este projeto é divido em três partes:
-1. Backend (pasta server) 
-2. Frontend (pasta web)
-3. Mobile (pasta mobile)
+Este projeto é divido em duas partes:
+1. Backend 
+2. Frontend
 
 💡O Frontend precisa que o Backend esteja sendo executado para funcionar.
 
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). [Mysql](https://dev.mysql.com/downloads/installer/), Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 #### 🎲 Rodando o Backend (servidor)
 
@@ -80,34 +73,40 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 # Clone este repositório
 $ git clone git@github.com:tgmarinho/README-ecoleta.git
 # Acesse a pasta do projeto no terminal/cmd
-$ cd README-ecoleta
-# Vá para a pasta server
-$ cd server
+$ cd iblue-school-back
 # Instale as dependências
-$ npm install
+$ npm install ou yarn install
+# Crie um arquivo .env na raiz do projeto
+$ touch .env ou crie um arquivo pela IDE
+# Vá para o arquivo .env.example
+$ copie os dados do .env.example e cole no .env
+# Altere os dados do .env 
+$ Mude para os dados do seu ambiente
 # Execute a aplicação em modo de desenvolvimento
-$ npm run dev:server
-# O servidor inciará na porta:3333 - acesse http://localhost:3333 
+$ npm run dev ou yarn dev
+# O servidor iniciará na porta:3333 por padrão - acesse http://localhost:3333
+# Observação: Essa porta é referente ao NODE_PORT presente no .env, se você alterar, terá que mudar a porta "3333" para a que você definiu. 
 ```
-<p align="center">
-  <a href="https://github.com/tgmarinho/README-ecoleta/blob/master/Insomnia_API_Ecoletajson.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
-</p>
-
 
 #### 🧭 Rodando a aplicação web (Frontend)
 
 ```bash
 # Clone este repositório
 $ git clone git@github.com:tgmarinho/README-ecoleta.git
-# Acesse a pasta do projeto no seu terminal/cmd
-$ cd README-ecoleta
-# Vá para a pasta da aplicação Front End
-$ cd web
+# Acesse a pasta do projeto no terminal/cmd
+$ cd iblue-school-front
 # Instale as dependências
-$ npm install
+$ npm install ou yarn install
+# Crie um arquivo .env na raiz do projeto
+$ touch .env ou crie um arquivo pela IDE
+# Vá para o arquivo .env.example
+$ copie os dados do .env.example e cole no .env
+# Altere os dados do .env 
+$ Altere a porta ex: http://localhost:SUAPORTADOBACK
 # Execute a aplicação em modo de desenvolvimento
-$ npm run start
-# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+$ npm run serve ou yarn serve
+# O servidor iniciará na porta:8080 por padrão - acesse http://localhost:8080
+# Observação: Essa aplicação só vai funcionar perfeitamente com o backend em node rodando em paralelo, ou seja, ao mesmo tempo. 
 ```
 
 ---
@@ -119,25 +118,29 @@ As seguintes ferramentas foram usadas na construção do projeto:
 #### **Website**  ([Vue](https://vuejs.org/))
 
 -   **[Axios](https://github.com/axios/axios)**
--   **[@vue/cli-plugin-router](https://router.vuejs.org/installation.html)**
--   **[@toastify-js](https://www.npmjs.com/package/toastify-js)**
--   **[Vue](https://www.npmjs.com/package/vue)**
+-   **[toastify-js](https://www.npmjs.com/package/toastify-js)**
+-   **[vue-router](https://router.vuejs.org/)**
 
-> Veja o arquivo  [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/web/package.json)
-#### [](https://github.com/tgmarinho/Ecoleta#server-nodejs--typescript)**Server**  ([NodeJS](https://nodejs.org/en/))
+#### **Server**  ([NodeJS](https://nodejs.orgen/))
 
 -   **[Express](https://expressjs.com/)**
 -   **[CORS](https://expressjs.com/en/resources/middleware/cors.html)**
--   **[Sequelize](https://www.npmjs.com/package/sequelize)**
--   **[Mysql2](https://www.npmjs.com/package/mysql2)**
--   **[Nodemon](https://www.npmjs.com/package/nodemon)**
+-   **[mysql2](https://github.com/mapbox/node-sqlite3)**
+-   **[sequelize](https://sequelize.org/)**
+-   **[nodemon](https://github.com/TypeStrong/ts-node)**
 -   **[dotENV](https://github.com/motdotla/dotenv)**
 -   **[Joi](https://github.com/hapijs/joi)**
+-   **[mocha](https://mochajs.org/)**
+-   **[uuidv4](https://www.npmjs.com/package/uuidv4)**
+-   **[chai](https://www.chaijs.com/)**
+-   **[chai-http](https://www.chaijs.com/plugins/chai-http/)**
+-   **[bcrypt](https://www.npmjs.com/package/bcrypt)**
+-   **[body-parser](https://www.npmjs.com/package/body-parser)**
 
-> Veja o arquivo  [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/mobile/package.json)
-#### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
+#### **Utilitários**
 
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
+-   Ferramenta de banco de dados: **[DBeaver](https://dbeaver.io/)**
 -   Teste de API:  **[Insomnia](https://insomnia.rest/)**
 -   Fontes: **[Roboto](https://fonts.google.com/specimen/Roboto)**
 
@@ -149,14 +152,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
  <sub><b>Wilson Pinheiro</b></sub></a>
  <br />
 
-[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/tgmarinho/) 
-[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:tgmarinho@gmail.com)
+[![Linkedin Badge](https://img.shields.io/twitter/url?label=LINKEDIN&logo=linkedin&style=social&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fwilsonpinh%2F)](https://www.linkedin.com/in/wilsonpinh/) 
 
----
-
-## 📝 Licença
-
-Este projeto esta sobe a licença [MIT](./LICENSE).
-
-Feito com ❤️ por Wilson Pinheiro dos Santos Neto 👋🏽 
-[Entre em contato!](https://www.linkedin.com/in/wilsonpinh/)
+Feito por Wilson Pinheiro, com o objetivo de realizar o desafio final para vaga de estágio. 😀 [Entre em contato!](https://www.linkedin.com/in/wilsonpinh/)

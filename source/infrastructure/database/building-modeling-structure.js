@@ -1,7 +1,7 @@
 const User = require('./model/user-model/user-registration-model');
 
-const dbInit = () => {
+const databaseSync = () => {
   User.sync();
 }
 
-module.exports = dbInit;
+module.exports = databaseSync;

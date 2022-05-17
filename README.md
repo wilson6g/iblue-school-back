@@ -14,6 +14,7 @@ Tabela de conteúdos
 =================
 <!--ts-->
    * [Sobre o projeto](#-sobre-o-projeto)
+   * [Regras de negócio](#-regras-de-negocio)
    * [Funcionalidades](#-funcionalidades)
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
@@ -33,7 +34,7 @@ Projeto desenvolvido durante o **Programa de Estágio da IBlue Consulting** ofer
 
 ---
 
-## 💻 Regras de negócio
+## 🖥️ Regras de negócio
 🖥️ A aplicação deve redirecionar o usuário para uma calculadora de acordo com sua escolaridade;
 🖥️ A aplicação deve retornar uma mensagem para cada erro no sistema; 
 🧍 O usuário não pode cadastrar o mesmo e-mail mais de um vez;

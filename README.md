@@ -33,6 +33,22 @@ Projeto desenvolvido durante o **Programa de Estágio da IBlue Consulting** ofer
 
 ---
 
+## 💻 Regras de negócio
+🖥️ A aplicação deve redirecionar o usuário para uma calculadora de acordo com sua escolaridade;
+🖥️ A aplicação deve retornar uma mensagem para cada erro no sistema; 
+🧍 O usuário não pode cadastrar o mesmo e-mail mais de um vez;
+🧍 O usuário deve ter um e-mail válido;
+🧍 O usuário deve ter uma senha com mais de 6 caracteres e menos de 13 caracteres;
+🧍 Todos os campos do registro e login do usuário deve fazer a verificação de tipo, se o campo é nulo e/ou se é obrigatório;
+🖩 A calculadora só deve mostrar determinadas operações matemáticas, de acordo com seu nível de escolaridade;
+🖩 A calculadora só deve aceitar caracteres numerais [0 a 9] e sinais aritimeticos [+ - * / . % √];
+🖩 A calculadora não deve fazer operações matemáticas, caso envie o campo nulo;
+🖩 A calculadora deve retornar "NaN" ou uma mensagem de erro caso seja enviado só com a operação matemática e sem nenhum número; 
+
+Projeto desenvolvido durante o **Programa de Estágio da IBlue Consulting** oferecido pela [IBlueConsulting](https://www.iblueconsulting.com.br/).
+
+---
+
 ## ⚙️ Funcionalidades
 
 - [x] Os estudantes podem se cadastrar na plataforma web enviando:

@@ -14,7 +14,7 @@ const authenticateUser = async (request, response) => {
 
     if (!await User.prototype.validPassword(password, isUser.password)) return httpStatusResponse(400, ("Senha incorreta!"), "User repository");
 
-    return await User.prototype.validPassword(password, isUser.password);
+    return isUser.is_fundamental_two;
 
   } catch (error) {
     const finalError = httpStatusResponse(400, ("E-mail e/ou senha incorretos!"), "User repository");

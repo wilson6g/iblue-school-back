@@ -10,9 +10,9 @@ userAuthInterface.post('/api/auth/user', async (request, response) => {
 
   const userLogged = await authenticateUser(request, response);
 
-  if (userLogged != true) return response.status(userLogged.statusCode).json({ message: userLogged.body }).send();
+  if (userLogged.statusCode == 400) return response.status(userLogged.statusCode).json({ message: userLogged.body }).send();
 
-  return response.status(200).json({ message: "Usuário autenticado com sucesso!" }).send();
+  return response.status(200).json({ message: "Usuário autenticado com sucesso!", fundamental_two: userLogged }).send();
 })
 
 module.exports = userAuthInterface;

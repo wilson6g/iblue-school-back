@@ -71,7 +71,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 ```bash
 # Clone este repositório
-$ git clone git@github.com:tgmarinho/README-ecoleta.git
+$ git clone git@github.com:wilson6g/iblue-school-back.git
 # Acesse a pasta do projeto no terminal/cmd
 $ cd iblue-school-back
 # Instale as dependências

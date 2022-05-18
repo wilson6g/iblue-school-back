@@ -84,6 +84,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 #### 🎲 Rodando o Backend (servidor)
 
 ```bash
+# Versão v16.15.0 do Node
 # Verifique que você já possui os pré-requisitos instalados
 # Crie um banco de dados, as tabelas vão ser geradas automáticamente quando terminar todos esses passos
 # Clone este repositório

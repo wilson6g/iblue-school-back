@@ -87,6 +87,8 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 #### 🎲 Rodando o Backend (servidor)
 
 ```bash
+# Verifique que você já possui os pré-requisitos instalados
+# Crie um banco de dados, as tabelas vão ser geradas automáticamente quando terminar todos esses passos
 # Clone este repositório
 $ git clone git@github.com:wilson6g/iblue-school-back.git
 # Acesse a pasta do projeto no terminal/cmd
@@ -100,7 +102,9 @@ $ touch .env ou crie um arquivo pela IDE
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev ou yarn dev
 # O servidor iniciará na porta:3333 por padrão - acesse http://localhost:3333
-# Observação: Essa porta é referente ao NODE_PORT presente no .env, se você alterar, terá que mudar a porta "3333" para a que você definiu. 
+# Observações: 
+# Essa porta é referente ao NODE_PORT presente no .env, se você alterar, terá que mudar a porta "3333" para a que você definiu.
+# Você pode alterar o DIALECT no .env, para um banco de dados da sua preferência... postgress, por exemplo... consulte a documentação do sequelize.
 ```
 
 #### 🧭 Rodando a aplicação web (Frontend)

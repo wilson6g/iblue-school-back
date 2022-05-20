@@ -41,6 +41,8 @@ const operation = (request, response) => {
     if (numbers[numbers.length - 1].includes("%") &&
       !numbers[numbers.length - 1].includes("+")) return "0";
 
+    if (numbers[numbers.length - 1].includes("/0")) return "Não é possível dividir por zero"
+
     return eval(numbers[numbers.length - 1].toString());
 
   } catch (error) {

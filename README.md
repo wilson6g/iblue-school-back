@@ -103,7 +103,7 @@ $ touch .env ou crie um arquivo pela IDE
 # DB_USERNAME= insira o usuário do banco de dados, geralmente é "root".
 # DB_PASSWORD= insira a senha do seu banco de dados.
 # DB_PORT= insira a porta, geralmente é: "3306".
-# DB_DIALECT=mysql
+# DB_DIALECT=use o "mysql", por padrão.
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev ou yarn dev
 # O servidor iniciará na porta:3333 por padrão - acesse http://localhost:3333

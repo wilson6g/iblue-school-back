@@ -44,7 +44,7 @@ Projeto desenvolvido durante o **Programa de Estágio da IBlue Consulting** ofer
 #### 🖩 A calculadora só deve mostrar determinadas operações matemáticas, de acordo com seu nível de escolaridade;
 #### 🖩 A calculadora só deve aceitar caracteres numerais [0 a 9] e sinais aritimeticos [+ - * / . % √];
 #### 🖩 A calculadora não deve fazer operações matemáticas, caso envie o campo nulo;
-#### 🖩 A calculadora deve retornar "NaN" ou uma mensagem de erro caso seja enviado só com a operação matemática e sem nenhum número; 
+#### 🖩 A calculadora deve retornar "NaN", "0" ou uma mensagem de erro caso seja enviado só com a operação matemática e sem nenhum número; 
 ---
 
 ## ⚙️ Funcionalidades
@@ -97,6 +97,13 @@ $ npm install ou yarn install
 $ touch .env ou crie um arquivo pela IDE
 # Vá para o arquivo .env.example e copie os dados do .env.example e cole no .env
 # Altere os dados do .env e mude para os dados do seu ambiente
+# NODE_PORT= insira a porta que deseja rodar o servidor, geralmente usa-se a "3000".
+# DB_HOST= aqui geralmente usa-se "localhost".
+# DB_NAME= insira o nome do banco de dados que você criou.
+# DB_USERNAME= insira o usuário do banco de dados, geralmente é "root".
+# DB_PASSWORD= insira a senha do seu banco de dados.
+# DB_PORT= insira a porta, geralmente é: "3306".
+# DB_DIALECT=mysql
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev ou yarn dev
 # O servidor iniciará na porta:3333 por padrão - acesse http://localhost:3333

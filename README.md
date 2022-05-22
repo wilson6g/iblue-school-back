@@ -32,6 +32,8 @@ Tabela de conteúdos
 
 Projeto desenvolvido durante o **Programa de Estágio da IBlue Consulting** oferecido pela [IBlueConsulting](https://www.iblueconsulting.com.br/).
 
+Site da escola usada como inspiração: [UCSAL](https://ucsal.br/).
+
 ---
 
 ## 🖥️ Regras de negócio
